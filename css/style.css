@@ -1,0 +1,29 @@
+*,
+*,::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .2rem;
+    width: 80%;
+    border: 1px solid silver;
+    & .card {
+        display: grid;
+        width: 18rem;
+        background-color: darkslategray;
+        gap:  .3rem;
+        & img{
+            width: 100%;
+        }
+    }
+}
